@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon SignUp</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+    </header>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>location</li>
+            <li>blog</li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Book a table</h1>
+       <form action="POST">
+        <fieldset id="size">
+            <!-- The fieldset id should be the same as the name on the input. -->
+             <!-- It's recommended in mobile experiences to make a label so people can easily select the value they need-->
+              <label for="">
+                <input type="radio" value="2" name="size"> 2-person table
+              </label>
+              <label for="">
+                <input type="radio" value="4" name="size" checked> 4-person table <!-- since the most common table size is this one, we should check it as default check-->
+              </label>
+            <label for="">
+                <input type="radio" value="6" name="size"> 6-person table 
+            </label>
+        </fieldset>
+        <fieldset id="location">
+            <label for="">
+                <input type="radio" value="indoors" name="location"> Indoors
+            </label>
+            <label for="">
+                <input type="radio" valure="outdoors" name="location" checked> Outdoors 
+            </label>
+            
+            
+        </fieldset>
+        <button type="submit">Book table</button>
+       </form>
+    <footer>
+        <p>Copyright Little lemon</p>
+    </footer>
+</body>
+</html>
