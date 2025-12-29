@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /*Inline flex makes the flex container behave like an inline element */
+    display: inline-flex;
+    flex: 1 1 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    /*The overflow clips the overflowing content, which in this case will be the text enter in the search query.  */
+    overflow: hidden;
+}
+.icon{
+    padding: 0.8rem;
+}
+.searchBox{
+    border: 0;
+    flex: 1;
+}
+.searchButton{
+    color: white;
+    background-color: #0f4a8a;
+    border: 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+.searchButton:hover{
+    cursor: pointer;
+}
+
+.container_nav{
+    background-color: #ccc;
+    display: flex;
+    /* this property specifies the direction of the flex container and its behavior for wrapping*/
+    flex-flow: row wrap;
+    /* aligns the items along the main axis */
+    justify-content: stretch;
+}
+
+.container_nav li{
+    list-style-type: none;
+}
+.container_nav a{
+    display: inline-block;
+    padding: 25px;
+    margin: 0 25px;
+    text-align: cetner;
+    text-decoration: none;
+    color: #ffff;
+}
